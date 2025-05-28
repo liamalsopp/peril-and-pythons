@@ -22,5 +22,7 @@ for i in stats:
     point = 0
     for j in rolls:
         point += j
+        if rolls.index(j) == 3:
+            break
     points.append(point)
 print(points)
